@@ -37,8 +37,24 @@ namespace Prob2
         static void Main(string[] args)
         {
 
+            // Car is the base class
+            // Make is the child class
 
             #region demonstrate base class fields
+            // PUBLIC ACCESS MODIFIER
+            // Input:  new Car object, using public access modifier 
+            // Process: passes value into field by acessing object
+            // Output: prints value of that field
+            Car carPublicFieldExample = new Car();
+            Console.WriteLine("Passing field values into Car object directly:");
+            Console.WriteLine(new string('_', 55) + "\n");
+            carPublicFieldExample.carPublicString = "Honk!";
+            Console.WriteLine("Base: Car object");
+            Console.WriteLine("\t- carPublicString: {0}", 
+                carPublicFieldExample.carPublicString);
+            Console.WriteLine();
+
+            // PRIVATE AND PROTECTED ACCESS MODIFIERS
             // Input:   new Car object, with 2 parameter values
             // Process: passes parameter values into method
             // Output:  prints values of those 2 fields
@@ -53,6 +69,8 @@ namespace Prob2
             Console.WriteLine();
 
             #endregion
+
+            Console.WriteLine(new string('*', 55) + "\n\n");
 
             #region demonstrate child class fields
             // Input:   new Make object, with 4 parameter values

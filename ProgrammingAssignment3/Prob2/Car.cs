@@ -12,6 +12,8 @@ namespace Prob2
 
         #region fields
 
+        // declare public string
+        public string carPublicString;
         // declare private string 
         private string carPrivateString;
         // declare protected string
@@ -46,6 +48,8 @@ namespace Prob2
             Console.WriteLine("Base: Car object");
             Console.WriteLine("\t- carPrivateString: {0}", carPrivateString);
             Console.WriteLine("\t- carProtectedString: {0}", carProtectedString);
+            Console.WriteLine("\t- carPublicString: {0}", carPublicString);
+            
         }
 
         #endregion
