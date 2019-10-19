@@ -14,6 +14,7 @@ namespace Prob2
 
         // declare protected string
         protected string makeProtectedString;
+        // declare private string
         private string makePrivateString;
 
         #endregion
@@ -30,7 +31,7 @@ namespace Prob2
             // using chaining
 
             // using the keyword base
-            // these two are inherited constructors from the base class of car
+            // these two are inherited methods from the base class of car
             : base(carPrivateString, carProtectedString)
 
         {
@@ -45,12 +46,6 @@ namespace Prob2
         #endregion
 
         #region methods
-
-        // MakeMethod
-        public void MakeMethod()
-        {
-            Console.WriteLine("Make.MakeMethod");
-        }
 
         // PrintState Method
         // override means that the method in the child class of 

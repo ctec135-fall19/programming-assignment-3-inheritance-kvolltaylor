@@ -37,10 +37,11 @@ namespace Prob2
         static void Main(string[] args)
         {
 
-            // create new objects for child class Make
-            Make makeClass = new Make();
 
             #region demonstrate base class fields
+            // Input: new Car object, with 2 parameter values
+            // Process: passes parameter values into method
+            // Output: prints values of those fields
 
             // create new object for base class Car
             // pass parameter values to set fields using base master constructor
@@ -49,6 +50,7 @@ namespace Prob2
             Console.WriteLine(new string('_', 55) + "\n");
             carClass.PrintState();
             Console.WriteLine("\n");
+            Console.WriteLine();
 
             #endregion
 

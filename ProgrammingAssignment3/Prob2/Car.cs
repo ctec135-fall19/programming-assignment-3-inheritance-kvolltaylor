@@ -14,7 +14,6 @@ namespace Prob2
 
         // declare private string 
         private string carPrivateString;
-
         // declare protected string
         protected string carProtectedString;
 
@@ -29,7 +28,6 @@ namespace Prob2
         public Car (string PrivateString, string ProtectedString)
         {
             // using chaining
-
             // initializing instance variables
             this.carPrivateString = PrivateString;
             this.carProtectedString = ProtectedString;
@@ -39,12 +37,6 @@ namespace Prob2
         #endregion
 
         #region methods
-
-        // CarMethod
-        public void CarMethod()
-        {
-            Console.WriteLine("Car.CarMethod");
-        }
 
         // PrintState Method
         // virtual means that the children and grandchildren methods
