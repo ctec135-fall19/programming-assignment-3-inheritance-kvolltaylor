@@ -37,9 +37,8 @@ namespace Prob2
         static void Main(string[] args)
         {
 
-            // create new objects for child class Make & grandchild class Model
+            // create new objects for child class Make
             Make makeClass = new Make();
-            Model modelClass = new Model();
 
             #region demonstrate base class fields
 
