@@ -39,9 +39,9 @@ namespace Prob2
 
 
             #region demonstrate base class fields
-            // Input: new Car object, with 2 parameter values
+            // Input:   new Car object, with 2 parameter values
             // Process: passes parameter values into method
-            // Output: prints values of those fields
+            // Output:  prints values of those 2 fields
 
             // create new object for base class Car
             // pass parameter values to set fields using base master constructor
@@ -55,6 +55,11 @@ namespace Prob2
             #endregion
 
             #region demonstrate child class fields
+            // Input:   new Make object, with 4 parameter values
+            // Process: passes parameter values into method, with method 
+            //          using method from base class to access those values
+            // Output:  prints values of those 4 fields
+
 
             // create new object for child class Make
             // pass parameter values to set fields using child master constructor
