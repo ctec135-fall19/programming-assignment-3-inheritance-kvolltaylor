@@ -30,30 +30,45 @@ namespace Prob5
     {
         static void Main(string[] args)
         {
-            // Create an array of objects
-            // pass values into each field using their set method
-            Class1[] objects = new Class1[5];
-            new Class1 (42, "banana" );
-            new Class1(5, "endive" );
-            new Class1(24, "apple" );
-            new Class1(777, "carrot" );
-            new Class1(124, "daikon" );
+
+            // Input: an array of objects with 2 fields, one an int & on a string
+            // Process: submit objects to their class' interface method to sort
+            // Output: display objects sorted by alphabetic, then numberic field values
+            
+            // Create an array of objects of Class1 type
+            // pass values as parameters into each field for each object
+            Class1[] objects = new Class1[10];
+            objects[0] = new Class1 ("banana", 42 );
+            objects[1] = new Class1 ("banana", 40 );
+            objects[2] = new Class1 ("banana", 10 );
+            objects[3] = new Class1("endive", 5 );
+            objects[4] = new Class1("apple", 24 );
+            objects[5] = new Class1("carrot", 777 );
+            objects[6] = new Class1("daikon", 124 );
+            objects[7] = new Class1 ("banana", 492 );
+            objects[8] = new Class1("endive", 53 );
+            objects[9] = new Class1("carrot", 80 );
 
             // Display the array of objects unsorted
             Console.WriteLine("The array of objects unsorted:\n");
             foreach(Class1 obj in objects)
             {
-                Console.Write(obj.Number);
-                Console.WriteLine(" - " + obj.Produce);
+                Console.WriteLine("\t" + obj);
             }
             Console.WriteLine();
-            Console.WriteLine(new string('*', 55) + "\n\n");
+            Console.WriteLine(new string('_', 30) + "\n\n");
 
-            // Display the array of objects sorted by Number
-            // Sorted by descending value
-            
-            // Display the array of objects sorted by Produce
-            // Sorted by alphabetic order
+            // Sort objects by fields first alphabetically, then numerically
+            Array.Sort(objects);
+
+             // Display the array of objects after sorting
+            Console.WriteLine("The array of objects sorted:\n");
+            foreach(Class1 obj in objects)
+            {
+                Console.WriteLine("\t" + obj);
+            }
+            Console.WriteLine();
+            Console.WriteLine(new string('_', 30) + "\n\n");
 
         }
     }
