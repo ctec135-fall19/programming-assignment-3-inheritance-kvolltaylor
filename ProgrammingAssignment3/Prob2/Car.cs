@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Prob2
 {
     // Base Class -- Car
-    class Car
+    abstract class Car
     {
 
         #region fields
