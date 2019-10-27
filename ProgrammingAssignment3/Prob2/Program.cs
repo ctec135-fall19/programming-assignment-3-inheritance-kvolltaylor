@@ -45,14 +45,16 @@ namespace Prob2
             // Input:  new Car object, using public access modifier 
             // Process: passes value into field by acessing object
             // Output: prints value of that field
-            Car carPublicFieldExample = new Car();
-            Console.WriteLine("Passing field values into Car object directly:");
-            Console.WriteLine(new string('_', 55) + "\n");
-            carPublicFieldExample.carPublicString = "Honk!";
-            Console.WriteLine("Base: Car object");
-            Console.WriteLine("\t- carPublicString: {0}", 
-                carPublicFieldExample.carPublicString);
-            Console.WriteLine();
+
+            // Will not work because Car is abstract class: 
+            // Car carPublicFieldExample = new Car();
+            // Console.WriteLine("Passing field values into Car object directly:");
+            // Console.WriteLine(new string('_', 55) + "\n");
+            // carPublicFieldExample.carPublicString = "Honk!";
+            // Console.WriteLine("Base: Car object");
+            // Console.WriteLine("\t- carPublicString: {0}", 
+                // carPublicFieldExample.carPublicString);
+            
 
             // PRIVATE AND PROTECTED ACCESS MODIFIERS
             // Input:   new Car object, with 2 parameter values

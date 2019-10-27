@@ -59,6 +59,7 @@ namespace Prob5
             Console.WriteLine(new string('_', 30) + "\n\n");
 
             // Sort objects by fields first alphabetically, then numerically
+            // Sort is defined in the class using the IComparable interface
             Array.Sort(objects);
 
              // Display the array of objects after sorting

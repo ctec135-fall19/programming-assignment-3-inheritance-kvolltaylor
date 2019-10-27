@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 namespace Prob2
 {
     // Base Class -- Car
-    abstract class Car
+    class Car
     {
 
         #region fields
 
-        // declare public string
-        public string carPublicString;
+        // declare public 
+        // will not work because you can't implement an abstract class object
+        //public string carPublicString;
+
         // declare private string 
         private string carPrivateString;
         // declare protected string
@@ -48,7 +50,7 @@ namespace Prob2
             Console.WriteLine("Base: Car object");
             Console.WriteLine("\t- carPrivateString: {0}", carPrivateString);
             Console.WriteLine("\t- carProtectedString: {0}", carProtectedString);
-            Console.WriteLine("\t- carPublicString: {0}", carPublicString);
+            // Console.WriteLine("\t- carPublicString: {0}", carPublicString);
             
         }
 
